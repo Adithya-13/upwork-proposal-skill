@@ -1,0 +1,14 @@
+{
+  "name": "upwork-proposal-skill",
+  "owner": {
+    "name": "Adithya Firmansyah Putra"
+  },
+  "description": "Upwork proposal writing toolkit for Claude Code",
+  "plugins": [
+    {
+      "name": "upwork-proposal-skill",
+      "source": ".",
+      "description": "Build your freelancer profile once, then generate tailored Upwork proposals from job descriptions"
+    }
+  ]
+}

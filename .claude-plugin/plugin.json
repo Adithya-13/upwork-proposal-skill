@@ -1,0 +1,19 @@
+{
+  "name": "upwork-proposal-skill",
+  "description": "Build your freelancer profile once, then generate tailored Upwork proposals from job descriptions.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Adithya Firmansyah Putra"
+  },
+  "license": "MIT",
+  "keywords": [
+    "upwork",
+    "freelance",
+    "proposal",
+    "automation",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "homepage": "https://github.com/Adithya-13/upwork-proposal-skill",
+  "repository": "https://github.com/Adithya-13/upwork-proposal-skill"
+}
