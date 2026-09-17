@@ -1,0 +1,55 @@
+{
+  "name": "Jane Doe",
+  "role": "Backend Engineer",
+  "positioning": "I build reliable APIs and data pipelines for early-stage startups.",
+  "years_experience": "4",
+  "location": "Remote, GMT+7",
+  "experience_bullets": [
+    "4+ years building production backend systems",
+    "Led migration of a monolith to microservices handling 2M+ requests/day",
+    "Reduced API p99 latency by 60% at a Series A fintech startup"
+  ],
+  "achievements": [
+    "Speaker at PyCon Indonesia 2024",
+    "Open source maintainer, 1.2k GitHub stars across projects"
+  ],
+  "testimonials": [
+    {
+      "quote": "Jane shipped our payments refactor two weeks ahead of schedule with zero downtime.",
+      "source": "Upwork client review"
+    }
+  ],
+  "projects": [
+    {
+      "name": "PayFlow API",
+      "category": "Fintech",
+      "description": "Payments orchestration API handling multi-provider routing, retries, and reconciliation for a Series A startup.",
+      "tech": ["Python", "FastAPI", "PostgreSQL", "Stripe", "Redis"],
+      "good_for": ["fintech", "payments", "high-throughput APIs"],
+      "links": {"primary": "", "github": "https://github.com/janedoe/payflow", "other": ""}
+    },
+    {
+      "name": "Realtime Analytics Pipeline",
+      "category": "Data engineering",
+      "description": "Streaming pipeline processing 500k events/min into a data warehouse for near-real-time dashboards.",
+      "tech": ["Kafka", "Python", "ClickHouse", "Airflow"],
+      "good_for": ["data pipelines", "analytics", "real-time systems"],
+      "links": {"primary": "", "github": "https://github.com/janedoe/realtime-pipeline", "other": ""}
+    }
+  ],
+  "tech_stack": {
+    "languages_frameworks": ["Python", "FastAPI", "Django", "TypeScript", "Node.js"],
+    "architecture": ["Microservices", "Event-driven"],
+    "backend": ["PostgreSQL", "Redis", "Kafka", "AWS"],
+    "specialized": ["Payments infrastructure", "Data pipelines"]
+  },
+  "portfolio_url": "https://janedoe.dev",
+  "profile_links": [
+    {"label": "GitHub", "url": "https://github.com/janedoe"},
+    {"label": "LinkedIn", "url": "https://linkedin.com/in/janedoe"}
+  ],
+  "tone": "confident but natural, not salesy",
+  "banned_words": [],
+  "required_words": [],
+  "last_updated": "2026-01-15"
+}
