@@ -9,12 +9,22 @@ Generates high-converting Upwork proposals personalized to the user, using their
 
 Profile file location: `~/.claude/upwork-profile.json`
 
-## Step 0: Load the profile
+## Step 0: Load and validate the profile
 
 Read `~/.claude/upwork-profile.json`.
 
-- If it does not exist or is empty, stop and tell the user to run the `upwork-profile-builder` skill first. Do not write a generic, unpersonalized proposal as a fallback.
-- If it exists, use it as the only source of truth for the user's identity, experience, projects, tech stack, links, and tone. Never invent experience, projects, or metrics that aren't in the profile.
+**If the file does not exist:** stop immediately. Tell the user you don't have a profile to work from yet, and ask them to run the `upwork-profile-builder` skill first (e.g. "set up my upwork profile"). Do not write a generic, unpersonalized proposal as a fallback, and do not ask the interview questions yourself here, that's the other skill's job.
+
+**If the file exists, validate it's actually usable before writing anything.** Minimum bar to proceed:
+- `name` and `role` are non-empty
+- at least one entry in `projects`, each with a non-empty `description`
+- `portfolio_url` or at least one entry in `profile_links` is set
+
+If any of these are missing or the file is just an empty/skeleton JSON, stop and tell the user specifically what's missing (e.g. "your profile has no projects listed yet") and suggest running `upwork-profile-builder` again to fill it in, rather than guessing or padding the proposal with placeholders.
+
+If additional fields beyond the minimum bar are missing (e.g. no `achievements`, no `testimonials`), that's fine, just skip the proposal sections that depend on them (see structure below). Don't block on those.
+
+Once validated, use the profile as the only source of truth for the user's identity, experience, projects, tech stack, links, and tone. Never invent experience, projects, or metrics that aren't in the profile.
 
 ## Step 1: Parse the input
 
